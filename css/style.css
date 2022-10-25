@@ -169,6 +169,7 @@ img {
 .section {
     margin-top: 0;
     margin-bottom: 0;
+    padding-top: 94px;
     padding-bottom: 94px;
 }
 
@@ -199,8 +200,6 @@ img {
 /* Features & Team titles*/
 .feature-list {
     display: flex;
-    padding-top: 94px;
-    /* padding-bottom: 94px; */
     gap: 30px;
     align-items: flex-start;
 }
@@ -225,7 +224,12 @@ img {
 .feature-list .text {
     line-height: calc(24/14);
 }
+
 /* Activities */
+.section.action {
+    padding-top: 0;
+}
+
 .action-list {
     display: flex;
     gap: 30px;
@@ -263,7 +267,6 @@ img {
 .team-list .descript-team {
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 260px;
     background-color: var(--white-color);
 }
 
@@ -412,7 +415,7 @@ footer {
 .card-list {
     display: flex;
     padding: 0;
-    padding-top: 34px;
+    margin-top: 34px;
     gap: 30px;
     flex-wrap: wrap;
     align-items: center;
@@ -437,10 +440,12 @@ footer {
     margin-right: 0;
     padding-top: 20px;
     padding-bottom: 20px;
-    width: 370px;
+    padding-left: 24px;
+    padding-right: 24px;
     border-right: 1px solid var(--border-cards);
     border-bottom: 1px solid var(--border-cards);
     border-left: 1px solid var(--border-cards);
+    text-align: left;
 }
 
 .card-list .title {
