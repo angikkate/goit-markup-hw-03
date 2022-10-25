@@ -11,6 +11,7 @@
     --border-head: #ECECEC;
     --border-cards: #EEEEEE;
     --address-link: rgba(255, 255, 255, 0.6);
+    --button-hover: #188CE8;
 }
  body {
     background-color: var(--white-color);
@@ -39,7 +40,7 @@ img {
 .container {
     margin-left: auto;
     margin-right:auto;
-    width: 1230px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     /* outline: 2px solid tomato; */
@@ -260,7 +261,6 @@ img {
 }
 
 .team-list .item {
-    flex-basis: calc((100% - 30px * 3) / 4);
     border: 1px solid var(--border-cards);
 }
 
@@ -268,6 +268,7 @@ img {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: var(--white-color);
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-list .title {
@@ -357,6 +358,13 @@ footer {
     border: 1px solid transparent;
 }
 
+.button-studio:hover,
+.button-studio:focus {
+    background-color: var(--button-hover);
+    border-color: var(--button-hover);
+    border-radius: 4px;
+}
+
 /* Styles for Portfolio */
 .button-list {
     display: flex;
@@ -425,7 +433,6 @@ footer {
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;
-    width: calc((100% - 60px) / 3 );
 }
 
 .card-list .item:nth-child(3n) {
